@@ -1,7 +1,5 @@
 const quizContainer = document.getElementById('quiz');
 
-
-let currentQuestion = 0;
 let scores = {
     Unsafe: 0,
     Passive: 0,
@@ -10,6 +8,7 @@ let scores = {
     Preventative: 0,
 };
 
+let currentQuestion = 0;
 let keys = {
     U: "Unsafe",
     Pa: "Passive",
@@ -64,17 +63,18 @@ const results = {
 document.getElementById('start-button').addEventListener('click', function() {
     document.getElementById('start-page').style.display = 'none';
     document.getElementById('quiz-page').style.display = 'block';
-    userAnswers = {};
-    displayQuestion(); 
+    currentQuestion = 0;
+    displayQuestions(); 
 });
 
 function displayQuestions() {
     const display = questions[currentQuestion];
-    answerA.textContent = display.answers[0].text;
-    answerB.textContent = display.answers[1].text;
+    
+    document.getElementById('answerA').textContent = display.answers[0].text;
+    document.getElementById('answerB').textContent = display.answers[1].text;
 
-    answerA.onclick = () => selectAnswer(display.answers[0].type);
-    answerB.onclick = () => selectAnswer(display.answers[1].type);
+    document.getElementById('answerA').onclick = () => selectAnswer(display.answers[0].type);
+    document.getElementById('answerB').onclick = () => selectAnswer(display.answers[1].type);
   }
 
   function selectAnswer(type) {
@@ -99,7 +99,5 @@ for (let type in scores) {
     personaResult = type;
   }
 }
-    document.getElementById("resultImage").src = results[personaResult].image;
+    document.getElementById("Result-image").src = results[personaResult].image;
   }
-
-    displayQuestions();
