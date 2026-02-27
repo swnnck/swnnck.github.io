@@ -1,5 +1,6 @@
-#README
+# README
 
-##Author: Sam Winnick
+## Author: Sam Winnick
 
 code info eygdfhb
+changes by sam
