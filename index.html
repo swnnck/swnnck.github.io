@@ -1,101 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Adventure Personality Quiz</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 40px;
-            background-color: #f4f4f4;
-        }
-
-        #quiz, #result {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            max-width: 600px;
-            margin: auto;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        button {
-            display: block;
-            width: 100%;
-            padding: 12px;
-            margin: 10px 0;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 6px;
-            border: none;
-            background-color: #4CAF50;
-            color: white;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-
-        #result {
-            display: none;
-        }
-
-        img {
-            max-width: 200px;
-            margin-top: 20px;
-        }
-    </style>
+    <title>Privacy Persona</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="quiz-container">
+        <div class="start-page" id="start-page">
+            <h1>Privacy Persona</h1>
+            <img src="" class="start-image">
+            <button id="start-button" class="start-button">Start Quiz</button>
+            <a href="" target="_blank" rel="noopener noreferrer"><button class="start-button">About the Project</button></a>
+            <br>
+            <p1>Learn about your internet privacy knowledge on an adventure-based story quiz inspired by Cosmos Persona, Cake Resume and NordVPN</p1>
+            <p1>Made by Sam Winnick - Undergraduate Capstone</p1>
+        </div>
 
-<div id="quiz">
-    <h2 id="questionText"></h2>
-    <button id="answerA"></button>
-    <button id="answerB"></button>
-</div>
-
-<div id="result">
-    <h2 id="resultTitle"></h2>
-    <img id="resultImage" src="" alt="Result Image">
-</div>
-
-<script src="script.js"></script>
-
-<script>
-    // These must exist for your JS to work
-    const answerA = document.getElementById("answerA");
-    const answerB = document.getElementById("answerB");
-    const questionText = document.getElementById("questionText");
-
-    function displayQuestion() {
-        const display = questions[currentQuestion];
-        questionText.textContent = display.question;
-        answerA.textContent = display.answers[0].text;
-        answerB.textContent = display.answers[1].text;
-
-        answerA.onclick = () => selectAnswer(display.answers[0].type);
-        answerB.onclick = () => selectAnswer(display.answers[1].type);
-    }
-
-    function showResult() {
-        document.getElementById("quiz").style.display = "none";
-        document.getElementById("result").style.display = "block";
-
-        let personaResult = Object.keys(scores)[0];
-
-        for (let type in scores) {
-            if (scores[type] > scores[personaResult]) {
-                personaResult = type;
-            }
-        }
-
-        document.getElementById("resultTitle").textContent = results[personaResult].title;
-        document.getElementById("resultImage").src = results[personaResult].image;
-    }
-
-    displayQuestion();
-</script>
-
+ <div class="quiz-page" id="quiz-page" style="display: none;">
+            <div id="quiz">
+            </div>
+            <div id="result" style="display: none;">
+                <div class="persona-image">
+                    <img id="persona-image" src="" alt="Result Image">
+                </div>
+                <br>
+                <a href="Info/" target="_blank" rel="noopener noreferrer"><button class="start-button">Explore the Personas</button></a> 
+                <a href="index.html" target="_blank" rel="noopener noreferrer"><button class="start-button">About the Project</button></a>  
+                <div class="result-content">
+                    <div class="result-text">
+                    </div>
+                </div>
+            </div>
 </body>
 </html>
