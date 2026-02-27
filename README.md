@@ -1,1 +1,5 @@
-this is a read me
+#README
+
+##Author: Sam Winnick
+
+code info eygdfhb
