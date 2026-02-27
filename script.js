@@ -61,7 +61,12 @@ const results = {
     }
 };
 
-
+document.getElementById('start-button').addEventListener('click', function() {
+    document.getElementById('start-page').style.display = 'none';
+    document.getElementById('quiz-page').style.display = 'block';
+    userAnswers = {};
+    displayQuestion(); 
+});
 
 function displayQuestions() {
     const display = questions[currentQuestion];
