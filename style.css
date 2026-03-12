@@ -56,7 +56,6 @@ p1{
     margin-top: 20px;
     cursor: pointer;
     border-radius: 0px;
-    transition: background-color 0.3s ease;
 }
 
 
@@ -78,7 +77,6 @@ p1{
     margin-top: 20px;
     cursor: pointer;
     border-radius: 0px;
-    transition: background-color 0.3s ease;
 }
 
 .about-button:hover {
