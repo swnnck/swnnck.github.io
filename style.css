@@ -1,14 +1,13 @@
 body {
     font-family: "Lucida Console", "Courier New", monospace;
-    background-color: #778b75;
+    background-color: #3F6A3E;
     font-size: 20px;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1000;
-    /*hight: 100vd;;*/
+    height: 100vh;
     
 }
 
@@ -45,7 +44,7 @@ p1{
 
 .start-button {
     font-family: "Lucida Console", "Courier New", monospace;
-    background-color: #843b62; 
+    background-color: #0A1B09; 
     border: none;
     color: #ffffff;
     padding: 15px 32px;
@@ -60,16 +59,16 @@ p1{
 
 
 .start-button:hover {
-    background-color: #ffffff; /* Darker green */
-    color: #090808;
+    background-color: #254C23; 
+    color: #ffffff;
 }
 
 .about-button {
     display: inline-block;
     font-family: "Lucida Console", "Courier New", monospace;
-    background-color: #a17e91; 
+    background-color: #74483E; 
     border: none;
-    color: #ffffff;
+    color: #0A1B09;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -80,8 +79,8 @@ p1{
 }
 
 .about-button:hover {
-    background-color: #ffffff; /* Darker green */
-    color: #090808;
+    background-color: #815950;
+    color: #0A1B09;
 }
 
 
