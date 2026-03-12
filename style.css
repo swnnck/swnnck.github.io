@@ -66,19 +66,24 @@ p1{
 }
 
 .about-button {
+    display: inline-block;
     font-family: "Lucida Console", "Courier New", monospace;
-    background-color: #843b62; 
+    background-color: #a17e91; 
     border: none;
     color: #ffffff;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     margin-top: 20px;
     cursor: pointer;
     border-radius: 0px;
     transition: background-color 0.3s ease;
+}
+
+.about-button:hover {
+    background-color: #ffffff; /* Darker green */
+    color: #090808;
 }
 
 
@@ -88,7 +93,7 @@ p1{
 }
 
 .answer-button {
-    font-family: 'Comfortaa', sans-serif;
+    font-family: "Lucida Console", "Courier New", monospace;
     background-color: #843b62;
     border: none;
     color: #ffffff;
@@ -169,7 +174,7 @@ footer {
   
 
 #question-text {
-    font-family: 'Comfortaa', sans-serif;
+    font-family: "Lucida Console", "Courier New", monospace;
     font-size: 18px;
     color: #0b032d;
     margin-bottom: 15px;
