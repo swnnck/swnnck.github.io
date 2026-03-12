@@ -1,3 +1,4 @@
+
 const quizContainer = document.getElementById('quiz');
 
 let scores = {
@@ -69,7 +70,7 @@ document.getElementById('start-button').addEventListener('click', function() {
 
 function displayQuestions() {
     const display = questions[currentQuestion];
-    
+    document.getElementById('question-text').textContent = display.question;
     document.getElementById('answerA').textContent = display.answers[0].text;
     document.getElementById('answerB').textContent = display.answers[1].text;
 
@@ -101,3 +102,5 @@ for (let type in scores) {
 }
     document.getElementById("Result-image").src = results[personaResult].image;
   }
+
+
