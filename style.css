@@ -60,7 +60,7 @@ p1{
 
 .start-button:hover {
     background-color: #1D271D 
-    color: #ffffff;
+    colour: #ffffff;
 }
 
 .about-button {
@@ -68,11 +68,11 @@ p1{
     font-family: "Lucida Console", "Courier New", monospace;
     background-color: #74483E; 
     border: none;
-    color: #151B15;
+    colour: #151B15;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 12px;
     margin-top: 20px;
     cursor: pointer;
     border-radius: 0px;
@@ -83,7 +83,6 @@ p1{
     color: #151B15;
 }
 
-
 .start-image {
     max-width: 100%; /* Ensure the image doesn't exceed the container width */
     max-height: 300px; /* Set a maximum height to prevent excessively tall images */
@@ -93,7 +92,7 @@ p1{
     font-family: "Lucida Console", "Courier New", monospace;
     background-color: #843b62;
     border: none;
-    color: #ffffff;
+    colour: #ffffff;
     padding: 15px 32px;
     text-align: center;
     font-size: 16px;
@@ -107,7 +106,7 @@ p1{
 
 .answer-button:hover {
     background-color: #ffffff;
-    color: #090808;
+    colour: #090808;
 }
 
 
@@ -173,6 +172,6 @@ footer {
 #question-text {
     font-family: "Lucida Console", "Courier New", monospace;
     font-size: 18px;
-    color: #0b032d;
+    colour: #0b032d;
     margin-bottom: 15px;
 }
