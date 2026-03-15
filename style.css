@@ -40,13 +40,15 @@ p{
 
 p1{
     font-size: 10px;
+    text-align: center;
+    padding-top: 400px;
 }
 
 .start-button {
     font-family: "Lucida Console", "Courier New", monospace;
-    background-colour: #151B15; 
+    background-colour: #66593D; 
     border: none;
-    colour: #ffffff;
+    colour: #312500;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -59,16 +61,16 @@ p1{
 
 
 .start-button:hover {
-    background-colour: #1D271D;
-    colour: #ffffff;
+    background-colour: #82724e;
+    colour: #312500;
 }
 
 .about-button {
     display: inline-block;
     font-family: "Lucida Console", "Courier New", monospace;
-    background-colour: #74483E; 
+    background-colour: #B4A88A; 
     border: none;
-    colour: #151B15;
+    colour: #312500;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -79,8 +81,8 @@ p1{
 }
 
 .about-button:hover {
-    background-colour: #815950;
-    colour: #151B15;
+    background-colour: #d0c29f;
+    colour: #312500;
 }
 
 .start-image {
