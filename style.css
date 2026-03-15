@@ -1,6 +1,6 @@
 body {
     font-family: "Lucida Console", "Courier New", monospace;
-    background-colour: #5D7A5D;
+    background-color: #5D7A5D;
     font-size: 20px;
     margin: 0;
     padding: 0;
@@ -15,8 +15,8 @@ body {
     font-family: "Lucida Console", "Courier New", monospace;
     text-align: center;
     font-size: 20px;
-    background-colour: #5D7A5D;
-    colour: #0b032d;
+    background-color: #5D7A5D;
+    color: #0b032d;
     padding: 20px;
     border-radius: 10px;
    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
@@ -46,9 +46,9 @@ p1{
 
 .start-button {
     font-family: "Lucida Console", "Courier New", monospace;
-    background-colour: #66593D; 
+    background-color: #66593D; 
     border: none;
-    colour: #312500;
+    color: #312500;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -61,16 +61,16 @@ p1{
 
 
 .start-button:hover {
-    background-colour: #82724e;
-    colour: #312500;
+    background-color: #82724e;
+    color: #312500;
 }
 
 .about-button {
     display: inline-block;
     font-family: "Lucida Console", "Courier New", monospace;
-    background-colour: #B4A88A; 
+    background-color: #B4A88A; 
     border: none;
-    colour: #312500;
+    color: #312500;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -81,8 +81,8 @@ p1{
 }
 
 .about-button:hover {
-    background-colour: #d0c29f;
-    colour: #312500;
+    background-color: #d0c29f;
+    color: #312500;
 }
 
 .start-image {
@@ -92,9 +92,9 @@ p1{
 
 .answer-button {
     font-family: "Lucida Console", "Courier New", monospace;
-    background-colour: #843b62;
+    background-color: #843b62;
     border: none;
-    colour: #ffffff;
+    color: #ffffff;
     padding: 15px 32px;
     text-align: center;
     font-size: 16px;
@@ -103,19 +103,19 @@ p1{
     border-radius: 5px;
     display: block;
     width: 100%;
-    transition: background-colour 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 .answer-button:hover {
-    background-colour: #ffffff;
-    colour: #090808;
+    background-color: #ffffff;
+    color: #090808;
 }
 
 
 #result {
     /*margin-top: 20px;*/
     padding: 10px;
-    background-colour: #ffb997;
+    background-color: #ffb997;
     /*border: 2px solid #ddd;
     border-radius: 5px;*/
     display: none;
@@ -174,7 +174,7 @@ footer {
 #question-text {
     font-family: "Lucida Console", "Courier New", monospace;
     font-size: 18px;
-    colour: #0b032d;
+    color: #0b032d;
     margin-bottom: 15px;
 }
 
