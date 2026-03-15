@@ -12,7 +12,7 @@ let scores = {
 let currentQuestion = 0;
 let keys = {
     U: "Unsafe",
-    Pa: "Passive",
+    P: "Passive",
     C: "Curious",
     S: "Safe",
     Pr: "Preventative",
