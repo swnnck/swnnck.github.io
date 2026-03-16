@@ -24,8 +24,8 @@ const questions = [
         image: "",
         question: "You are about to embark on an adventure of endless possibilities into an unknown cave. How do you feel?",
         answers: [
-             {text: "I'm excited for whatever challenges I will face! It will be rewarding to see what lies ahead.", type: "S"},
-             {text: "I would feel better knowing the risks and rewards that lie ahead before going on the adventure.", type: "C"}
+             {text: "I'm excited for whatever challenges I will face! It will be rewarding to see what lies ahead.", type: "C"},
+             {text: "I would feel better knowing the risks and rewards that lie ahead before going on the adventure.", type: "S"}
                 ]
     },
 
