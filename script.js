@@ -152,11 +152,13 @@ const results = {
     }
 };
 
-document.getElementById('start-button').addEventListener('click', function() {
-    document.getElementById('start-page').style.display = 'none';
-    document.getElementById('quiz-page').style.display = 'block';
-    currentQuestion = 0;
-    displayQuestions(); 
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('start-button').addEventListener('click', function() {
+        document.getElementById('start-page').style.display = 'none';
+        document.getElementById('quiz-page').style.display = 'block';
+        currentQuestion = 0;
+        displayQuestions(); 
+    });
 });
 
 function displayQuestions() {
