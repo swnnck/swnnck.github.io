@@ -41,6 +41,7 @@ p{
 p1{
     font-size: 10px;
     text-align: center;
+    letter-spacing: 4px;
 }
 
 .start-button {
@@ -89,7 +90,7 @@ p1{
 
 .answer-button {
     font-family: "Lucida Console", "Courier New", monospace;
-    background-color: #843b62;
+    background-color: #5D7A5D;
     border: none;
     color: #ffffff;
     padding: 15px 32px;
@@ -112,7 +113,7 @@ p1{
 #result {
     /*margin-top: 20px;*/
     padding: 10px;
-    background-color: #ffb997;
+    background-color: #5D7A5D;
     /*border: 2px solid #ddd;
     border-radius: 5px;*/
     display: none;
