@@ -10,6 +10,7 @@ let scores = {
 };
 
 let currentQuestion = 0;
+
 let keys = {
     U: "Unsafe",
     P: "Passive",
@@ -169,7 +170,8 @@ function displayQuestions() {
   }
 
   function selectAnswer(type) {
-    scores[type]++;
+    const fullType = keys[type];
+    scores[fullType]++;
     currentQuestion++;
 
     if (currentQuestion < questions.length) {
@@ -184,7 +186,6 @@ function showResult() {
     document.getElementById("result").style.display = "block";
 
 let personaResult = Object.keys(scores)[0];
-
 for (let type in scores) {
   if (scores[type] > scores[personaResult]) {
     personaResult = type;
