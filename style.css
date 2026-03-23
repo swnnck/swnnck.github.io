@@ -41,7 +41,7 @@ p{
 p1{
     font-size: 10px;
     text-align: center;
-    letter-spacing: 4px;
+    letter-spacing: 2;
 }
 
 .start-button {
@@ -124,11 +124,14 @@ p1{
 #quiz p{
     font-size: 22px;
     margin: 10px 0;
+    text-align: center;
 
 }
 #result p {
     font-size: 18px;
     margin: 10px 0;
+    text-align: center;
+
 }
 
 #quiz img {
@@ -137,6 +140,8 @@ p1{
     display: block; /* Ensure the image is displayed as a block element */
     margin: auto; /* Center the image horizontally */
     font-size: 24px;
+    text-align: center;
+
 }
 
 question-image {
@@ -174,6 +179,8 @@ footer {
     font-size: 18px;
     color: #0b032d;
     margin-bottom: 15px;
+    text-align: center;
+
 }
 
 .start-image {
