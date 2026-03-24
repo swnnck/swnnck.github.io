@@ -132,23 +132,23 @@ const questions = [
 const results = {
     Unsafe: {
         title: "The Fly",
-        image: "url(images/The-Fly-Result.png)"
+        image: "images/The-Fly-Result.png"
     },
     Passive: {
         title: "The Ant",
-        image: "url(images/The-Ant-Result.png)"
+        image: "images/The-Ant-Result.png"
     },
     Curious: {
         title: "The Moth",
-        image: "url(images/The-Moth-Result.png)"
+        image: "images/The-Moth-Result.png"
     },
     Safe: {
         title: "The Beetle",
-        image: "url(images/The-Beetle-Result.png)"
+        image: "images/The-Beetle-Result.png"
     },
     Preventative: {
         title: "The Spider",
-        image: "url(images/The-Spider-Result.png)"
+        image: "images/The-Spider-Result.png"
     }
 };
 
@@ -183,16 +183,18 @@ function displayQuestions() {
     }
   }
 
-function showResult() {
-    document.getElementById("Result-image").src = results[personaResult].image;
-    document.getElementById("quiz").style.display = "none";
-    document.getElementById("result").style.display = "block";
-
 let personaResult = Object.keys(scores)[0];
 for (let type in scores) {
   if (scores[type] > scores[personaResult]) {
     personaResult = type;
   }
+
+function showResult() {
+    document.getElementById("Result-image").src = results[personaResult].image;
+    document.getElementById("quiz").style.display = "none";
+    document.getElementById("result").style.display = "block";
+
+
 }
     document.getElementById("Result-image").src = results[personaResult].image;
   }
