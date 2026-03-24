@@ -1,7 +1,7 @@
 body {
     font-family: "Lucida Console", "Courier New", monospace;
-    background-color: #5D7A5D;
     background-image: url('background.svg');
+    background-color: #5D7A5D;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
