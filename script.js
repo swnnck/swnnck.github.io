@@ -183,20 +183,20 @@ function displayQuestions() {
     }
   }
 
-let personaResult = Object.keys(scores)[0];
-for (let type in scores) {
-  if (scores[type] > scores[personaResult]) {
-    personaResult = type;
-  }
-
 function showResult() {
-    document.getElementById("Result-image").src = results[personaResult].image;
+    let personaResult = Object.keys(scores)[0];
+    for (let type in scores) {
+        if (scores[type] > scores[personaResult]) {
+            personaResult = type;
+        }
+    }
+
+    const resultImage = document.getElementById("Result-image");
+    resultImage.src = results[personaResult].image;
+    resultImage.alt = results[personaResult].title;
+
     document.getElementById("quiz").style.display = "none";
     document.getElementById("result").style.display = "block";
-
-
 }
-    document.getElementById("Result-image").src = results[personaResult].image;
-  }
 
 
