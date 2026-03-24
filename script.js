@@ -184,6 +184,7 @@ function displayQuestions() {
   }
 
 function showResult() {
+    document.getElementById("Result-image").src = results[personaResult].image;
     document.getElementById("quiz").style.display = "none";
     document.getElementById("result").style.display = "block";
 
