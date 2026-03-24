@@ -1,6 +1,10 @@
 body {
     font-family: "Lucida Console", "Courier New", monospace;
     background-color: #5D7A5D;
+    background-image: url('background.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     font-size: 20px;
     margin: 0;
     padding: 0;
@@ -90,7 +94,7 @@ p1{
 
 .answer-button {
     font-family: "Lucida Console", "Courier New", monospace;
-    background-color: #5D7A5D;
+    background-color: #4e3f27;
     border: none;
     color: #ffffff;
     padding: 15px 32px;
@@ -100,22 +104,20 @@ p1{
     cursor: pointer;
     border-radius: 5px;
     display: block;
-    width: 100%;
+    width: 90%;
     transition: background-color 0.3s ease;
 }
 
 .answer-button:hover {
-    background-color: #ffffff;
-    color: #090808;
+    background-color: #f4ffeb;
+    color: #4e3f27;
 }
 
 
 #result {
     /*margin-top: 20px;*/
     padding: 10px;
-    background-color: #5D7A5D;
-    /*border: 2px solid #ddd;
-    border-radius: 5px;*/
+    background-color: #4e3f27;
     display: none;
     width: 90%; /* Set width to 90% of the viewport */
     max-width: 400px; /* Set max-width to 400px */

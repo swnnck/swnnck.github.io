@@ -132,23 +132,23 @@ const questions = [
 const results = {
     Unsafe: {
         title: "The Fly",
-        image: ""
+        image: "url(images/The-Fly-Result.png)"
     },
     Passive: {
         title: "The Ant",
-        image: ""
+        image: "url(images/The-Ant-Result.png)"
     },
     Curious: {
         title: "The Moth",
-        image: ""
+        image: "url(images/The-Moth-Result.png)"
     },
     Safe: {
         title: "The Beetle",
-        image: ""
+        image: "url(images/The-Beetle-Result.png)"
     },
     Preventative: {
         title: "The Spider",
-        image: ""
+        image: "url(images/The-Spider-Result.png)"
     }
 };
 
