@@ -1,9 +1,6 @@
 body {
     font-family: "Lucida Console", "Courier New", monospace;
-    background-image: url("images/background.svg");
-    background-color: #5D7A5D;
-    background-size: cover;
-    background-position: center;
+    background: url("images/background.svg") center/cover no-repeat #5D7A5D;
     background-repeat: no-repeat;
     font-size: 20px;
     margin: 0;
@@ -43,7 +40,7 @@ p1{
     letter-spacing: 2;
 }
 
-.start-button {
+.start-button {  
     font-family: "Lucida Console", "Courier New", monospace;
     background-color: #66593D; 
     border: none;
