@@ -80,8 +80,8 @@ p1{
 }
 
 .start-image {
-    max-width: 100%; /* Ensure the image doesn't exceed the container width */
-    max-height: 300px; /* Set a maximum height to prevent excessively tall images */
+    max-width: 100%; 
+    max-height: 300px; 
 }
 
 .answer-button {
@@ -128,23 +128,6 @@ p1{
 
 }
 
-#quiz img {
-    max-width: 100%; /* Ensure the image doesn't exceed the container width */
-    max-height: 300px; /* Set a maximum height to prevent excessively tall images */
-    display: block; /* Ensure the image is displayed as a block element */
-    margin: auto; /* Center the image horizontally */
-    font-size: 24px;
-    text-align: center;
-
-}
-
-question-image {
-    max-width: 360px;
-    height: auto;
-    align-items: center;
-    margin: 4px;
-}
-
 .result-text {
     flex-grow: 1; /* Allow text to expand and take available space */
 }
@@ -156,17 +139,13 @@ question-image {
 }
 
 .result-image img {
-    max-width: 360px;
-    height: auto;
+    width: 360px;
+    max-width: 100%;
     align-items: center;
     margin: 4px;
     margin-top: 20px;
 }
 
-footer {
-    text-align: center;
-}
-  
 
 #question-text {
     font-family: "Lucida Console", "Courier New", monospace;
@@ -175,9 +154,4 @@ footer {
     margin-bottom: 15px;
     text-align: center;
 
-}
-
-.start-image {
-    max-width: 100%; /* Ensure the image doesn't exceed the container width */
-    max-height: 200px; /* Set a maximum height to prevent excessively tall images */
 }
