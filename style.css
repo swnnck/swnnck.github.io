@@ -145,11 +145,11 @@ p1{
 }
 
 .result-image img {
-    width: 200px;      
-    max-width: 80%;      
-    height: auto;        
-    display: block;
-    margin: 10px auto;  
+    max-width: 360px;
+    height: auto;
+    align-items: center;
+    margin: 4px;
+    margin-top: 20px;
 }
 
 
