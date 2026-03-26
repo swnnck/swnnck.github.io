@@ -48,8 +48,8 @@ p1{
 
  @media (hover: hover) and (pointer: fine) {
 .quiz-page:hover {
-    background-color: #4e3f27;
-    color: #ffffff;
+    background-color: #ffffff00;
+    color: #ffffff00;
 }
 }
 
