@@ -46,19 +46,6 @@ p1{
     letter-spacing: 2;
 }
 
- @media (hover: hover) and (pointer: fine) {
-.quiz-page:hover {
-    background-color: #ffffff00;
-    color: #ffffff00;
-}
-}
-
-@media (hover: none) {
-    .quiz-page:hover {
-        filter: none;
-    }
-}
-
 .start-button {  
     font-family: "Lucida Console", "Courier New", monospace;
     background-color: #66593D; 
@@ -117,6 +104,13 @@ p1{
     display: block;
     width: 90%;
     transition: background-color 0.3s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+.answer-button:hover {
+    background-color: #4e3f27;
+    color: #ffffff;
+}
 }
 
 .answer-button:hover {
