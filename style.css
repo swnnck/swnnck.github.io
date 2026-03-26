@@ -21,6 +21,12 @@ body {
     font-weight: bold;
 }
 
+#quiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 
 
 h1 {
@@ -109,9 +115,10 @@ p1{
     font-family: "Lucida Console", "Courier New", monospace;
     font-size: 18px;
     color: #0b032d;
-    margin-bottom: 15px;
+    margin: 0 0 15px 0;
+    padding: 0;
+    width: 90%;
     text-align: center;
-
 }
 
 #result {

@@ -6,9 +6,9 @@
 </head>
 <body>
 
-    <div class="quiz-page" id="quiz-page">
+    <div class="quiz-page" id="quiz-page"> //parent container
 
-        <div class="start-page" id="start-page">
+        <div class="start-page" id="start-page"> //start page child container 
             <img src="images/Vector-Computer1.svg" class="start-image">
             <h1>Privacy Persona</h1>
             <button id="start-button" class="start-button">Start Quiz</button>
@@ -22,21 +22,31 @@
         </div>
 
 
-        <div id="quiz" style="display: none;">
+        <div id="quiz" style="display: none;"> //quiz page child container
             <p id="question-text"></p>
             <button id="answerA" class="answer-button"></button>
             <button id="answerB" class="answer-button"></button>
             </div>
 
-        <div id="result" style="display: none;">
+        <div id="result" style="display: none;"> //results page child container
             <div class="result-image">
                 <img id="result-image" src="" alt="result image">
             </div>
             <br>
-            <a href="Info/" target="_blank" rel="noopener noreferrer"><button class="about-button">Explore the Personas</button></a> 
+            <a href="Info/" target="_blank" rel="noopener noreferrer"><button id="explore-button" class="about-button">Explore the Personas</button></a> 
             <a href="index.html" target="_blank" rel="noopener noreferrer"><button class="about-button">About the Project</button></a>  
-                </div>
         </div>
+
+        <div id="explore-page" style="display: none;">
+        <h1>The Personas</h1>
+        <img src="images/The-Fly-Result.png" alt="The Fly" class="result-image">
+        <img src="images/The-Ant-Result.png" alt="The Ant" class="result-image">
+        <img src="images/The-Moth-Result.png" alt="The Moth" class="result-image">
+        <img src="images/The-Beetle-Result.png" alt="The Beetle" class="result-image">
+        <img src="images/The-Spider-Result.png" alt="The Spider" class="result-image">
+        </div>
+
+    </div>
         <script src="script.js"></script>
 </body>
 </html>
