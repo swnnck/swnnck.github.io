@@ -138,7 +138,7 @@ p1{
 .result-image img {
     max-width: 500px;
     height: auto;
-    margin: 4px;
+    margin: auto;
     margin-top: 20px;
     align-items: center;
 }
