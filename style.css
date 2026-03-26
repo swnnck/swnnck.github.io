@@ -106,13 +106,6 @@ p1{
     transition: background-color 0.3s ease;
 }
 
-@media (hover: hover) and (pointer: fine) {
-.answer-button:hover {
-    background-color: #4e3f27;
-    color: #ffffff;
-}
-}
-
 .answer-button:hover {
     background-color: #f4ffeb;
     color: #4e3f27;
