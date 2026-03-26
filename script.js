@@ -155,7 +155,7 @@ const results = {
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('start-button').addEventListener('click', function() {
         document.getElementById('start-page').style.display = 'none';
-        document.getElementById('quiz-page').style.display = 'block';
+        document.getElementById('quiz').style.display = 'block';
         currentQuestion = 0;
         displayQuestions(); 
     });
@@ -191,7 +191,7 @@ function showResult() {
         }
     }
 
-    const resultImage = document.getElementById("Result-image");
+    const resultImage = document.getElementById("result-image");
     resultImage.src = results[personaResult].image;
     resultImage.alt = results[personaResult].title;
 
