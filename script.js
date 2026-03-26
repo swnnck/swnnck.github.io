@@ -191,14 +191,14 @@ function showResult() {
         }
     }
 
-    //this fucntion shows the results page and hides the other child pages
+    // this function shows the results page and hides the other child pages
     const resultImage = document.getElementById("result-image");
     resultImage.src = results[personaResult].image;
     resultImage.alt = results[personaResult].title;
     document.getElementById("quiz").style.display = "none";
     document.getElementById("result").style.display = "block";
 
-    //this fucntion shows the explore personas page and hides the other child pages
+    // this function shows the explore personas page and hides the other child pages
     document.getElementById('explore-button').addEventListener('click', function() {
     document.getElementById('start-page').style.display = 'none';
     document.getElementById('personas-page').style.display = 'block';
