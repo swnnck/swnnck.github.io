@@ -131,6 +131,7 @@ p1{
 
 .result-image {
     text-align: center;
+    align-items: center;
     width: 100%;
 }
  
@@ -139,6 +140,7 @@ p1{
     height: auto;
     margin: 4px;
     margin-top: 20px;
+    align-items: center;
 }
  
 
