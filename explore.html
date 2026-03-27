@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Explore the Personas</title>
+    <style>
+
+        body {
+    font-family: "Lucida Console", "Courier New", monospace;
+    background: url("images/background.svg") center/cover no-repeat #5D7A5D;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.quiz-page {
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    font-size: 20px;
+    max-width: 400px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.result-image {
+    text-align: center;
+    width: 100%;
+}
+ 
+.result-image img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    
+}
+    </style>
+</head>
+<body>
+
+    <div class="quiz-page" id="quiz-page"> <!-- main parent container  -->
+        <div id="explore-page" style="display: none;">
+            <h1>The Personas</h1>
+            <img src="images/The-Fly-Result.png" alt="The Fly" class="result-image">
+            <br>
+            <img src="images/The-Ant-Result.png" alt="The Ant" class="result-image">
+            <br>
+            <img src="images/The-Moth-Result.png" alt="The Moth" class="result-image">
+            <br>
+            <img src="images/The-Beetle-Result.png" alt="The Beetle" class="result-image">
+            <br>
+            <img src="images/The-Spider-Result.png" alt="The Spider" class="result-image">
+        </div>
+    </div>
+        <script src="script.js"></script>
+</body>
+</html>
