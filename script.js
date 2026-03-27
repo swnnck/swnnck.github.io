@@ -161,21 +161,14 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// this function shows the explore personas page and hides the other child pages
-document.getElementById("explore-button").addEventListener("click", function() {
-    document.getElementById("start-page").style.display = "none";
-    document.getElementById("result").style.display = "none";
-    document.getElementById("personas-page").style.display = "block";
-});
-
 function displayQuestions() {
     const display = questions[currentQuestion];
     document.getElementById("question-text").textContent = display.question;
-    document.getElementById("answerA").textContent = display.answers[0].text;
-    document.getElementById("answerB").textContent = display.answers[1].text;
+    document.getElementById('answerA').textContent = display.answers[0].text;
+    document.getElementById('answerB').textContent = display.answers[1].text;
 
-    document.getElementById("answerA").onclick = () => selectAnswer(display.answers[0].type);
-    document.getElementById("answerB").onclick = () => selectAnswer(display.answers[1].type);
+    document.getElementById('answerA').onclick = () => selectAnswer(display.answers[0].type);
+    document.getElementById('answerB').onclick = () => selectAnswer(display.answers[1].type);
   }
 
   function selectAnswer(type) {
