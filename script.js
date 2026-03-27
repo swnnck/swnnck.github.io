@@ -198,8 +198,6 @@ function showResult() {
     document.getElementById("quiz").style.display = "none";
     document.getElementById("result").style.display = "block";
 
-});
-
 }
 
 
