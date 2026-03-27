@@ -140,9 +140,21 @@ p1{
     height: auto;
     margin: auto;
     margin-top: 20px;
-    
 }
 
+#explore-page {
+    background-repeat: repeat-x;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
 
- 
+#explore-page img {
+    display: block;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+}
 
