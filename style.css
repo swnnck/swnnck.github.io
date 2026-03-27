@@ -1,7 +1,7 @@
 body {
     font-family: "Lucida Console", "Courier New", monospace;
     background: url("images/background.svg") center/cover no-repeat #5D7A5D;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     font-size: 20px;
     margin: 0;
     padding: 0;
@@ -143,18 +143,15 @@ p1{
 }
 
 #explore-page {
-    background-repeat: repeat-x;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+    padding: 10px;
 }
 
 #explore-page img {
-    display: block;
-    max-width: 500px;
     width: 100%;
     height: auto;
-    margin: auto;
-    margin-top: 20px;
+    display: block;
 }
 
