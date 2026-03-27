@@ -1,14 +1,7 @@
 
 const quizContainer = document.getElementById("quiz");
 
-let scores = {
-    Unsafe: 0,
-    Passive: 0,
-    Curious: 0,
-    Safe: 0,
-    Preventative: 0,
-};
-
+let totalPoints = 0;
 let currentQuestion = 0;
 
 let keys = {
@@ -17,6 +10,14 @@ let keys = {
     C: "Curious",
     S: "Safe",
     Pr: "Preventative",
+};
+
+const pointValues = {
+    U: 1,
+    P: 2, 
+    C: 3, 
+    S: 4,
+    Pr: 5,
 };
 
 const questions = [
@@ -152,11 +153,20 @@ const results = {
     }
 };
 
+function getPersonaFromScore(score) {
+    if (score <= 28) return keys.U;   // Unsafe:       23 – 28
+    if (score <= 34) return keys.P;   // Passive:      29 – 34
+    if (score <= 40) return keys.C;   // Curious:      35 – 40
+    if (score <= 46) return keys.S;   // Safe:         41 – 46
+    return keys.Pr;                   // Preventative: 47 – 51
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("start-button").addEventListener("click", function() {
+        currentQuestion = 0;
+        totalPoints = 0;
         document.getElementById("start-page").style.display = "none";
         document.getElementById("quiz").style.display = "block";
-        currentQuestion = 0;
         displayQuestions(); 
     });
 });
@@ -172,8 +182,7 @@ function displayQuestions() {
   }
 
   function selectAnswer(type) {
-    const fullType = keys[type];
-    scores[fullType]++;
+    totalPoints += pointValues[type];
     currentQuestion++;
 
     if (currentQuestion < questions.length) {
@@ -184,12 +193,7 @@ function displayQuestions() {
   }
 
 function showResult() {
-    let personaResult = Object.keys(scores)[0];
-    for (let type in scores) {
-        if (scores[type] > scores[personaResult]) {
-            personaResult = type;
-        }
-    }
+    const personaResult = getPersonaFromScore(totalPoints);
 
     // this function shows the results page and hides the other child pages
     const resultImage = document.getElementById("result-image");
