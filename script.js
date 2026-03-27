@@ -1,5 +1,5 @@
 
-const quizContainer = document.getElementById('quiz');
+const quizContainer = document.getElementById("quiz");
 
 let scores = {
     Unsafe: 0,
@@ -152,23 +152,30 @@ const results = {
     }
 };
 
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('start-button').addEventListener('click', function() {
-        document.getElementById('start-page').style.display = 'none';
-        document.getElementById('quiz').style.display = 'block';
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("start-button").addEventListener("click", function() {
+        document.getElementById("start-page").style.display = "none";
+        document.getElementById("quiz").style.display = "block";
         currentQuestion = 0;
         displayQuestions(); 
     });
 });
 
+// this function shows the explore personas page and hides the other child pages
+document.getElementById("explore-button").addEventListener("click", function() {
+    document.getElementById("start-page").style.display = "none";
+    document.getElementById("result").style.display = "none";
+    document.getElementById("personas-page").style.display = "block";
+});
+
 function displayQuestions() {
     const display = questions[currentQuestion];
-    document.getElementById('question-text').textContent = display.question;
-    document.getElementById('answerA').textContent = display.answers[0].text;
-    document.getElementById('answerB').textContent = display.answers[1].text;
+    document.getElementById("question-text").textContent = display.question;
+    document.getElementById("answerA").textContent = display.answers[0].text;
+    document.getElementById("answerB").textContent = display.answers[1].text;
 
-    document.getElementById('answerA').onclick = () => selectAnswer(display.answers[0].type);
-    document.getElementById('answerB').onclick = () => selectAnswer(display.answers[1].type);
+    document.getElementById("answerA").onclick = () => selectAnswer(display.answers[0].type);
+    document.getElementById("answerB").onclick = () => selectAnswer(display.answers[1].type);
   }
 
   function selectAnswer(type) {
@@ -198,10 +205,6 @@ function showResult() {
     document.getElementById("quiz").style.display = "none";
     document.getElementById("result").style.display = "block";
 
-    // this function shows the explore personas page and hides the other child pages
-    document.getElementById('explore-button').addEventListener('click', function() {
-    document.getElementById('start-page').style.display = 'none';
-    document.getElementById('personas-page').style.display = 'block';
 });
 
 }
