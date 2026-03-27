@@ -169,6 +169,12 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("quiz").style.display = "block";
         displayQuestions(); 
     });
+
+    document.getElementById("explore-button").addEventListener("click", function() {
+        document.getElementById("start-page").style.display = "none";
+        document.getElementById("explore-page").style.display = "block";
+    });
+
 });
 
 function displayQuestions() {
