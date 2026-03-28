@@ -143,6 +143,9 @@ p1{
 }
 
 #explore-page {
+    background: url("images/background.svg") #5D7A5D;
+    background-repeat: repeat-y;
+    background-size: 50%;
     align-items: center;
     padding: 20px;
     padding-top: 40px;
@@ -157,7 +160,7 @@ p1{
     max-width: 500px;
     height: auto;
     display: block;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 #explore-page h1 {
