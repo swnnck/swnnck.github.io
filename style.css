@@ -157,6 +157,8 @@ p1{
     max-width: 500px;
     height: auto;
     display: block;
-    padding-top:100px;
 }
 
+#explore-page h1 {
+    margin-top: 0; 
+}
