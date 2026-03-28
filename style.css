@@ -157,6 +157,7 @@ p1{
     max-width: 500px;
     height: auto;
     display: block;
+    padding-bottom: 20px;
 }
 
 #explore-page h1 {
