@@ -2,6 +2,7 @@ body {
     font-family: "Lucida Console", "Courier New", monospace;
     background: url("images/background.svg") center/cover no-repeat #5D7A5D;
     background-repeat: repeat-y;
+    background-size: 50%;
     font-size: 20px;
     margin: 0;
     padding: 0;
@@ -143,9 +144,6 @@ p1{
 }
 
 #explore-page {
-    background: url("images/background.svg") #5D7A5D;
-    background-repeat: repeat-y;
-    background-size: 50%;
     align-items: center;
     padding: 20px;
     padding-top: 40px;
@@ -160,7 +158,8 @@ p1{
     max-width: 500px;
     height: auto;
     display: block;
-    padding-bottom: 30px;
+    padding: 50px, 0px;
+    
 }
 
 #explore-page h1 {
