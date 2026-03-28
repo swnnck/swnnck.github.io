@@ -150,6 +150,7 @@ p1{
     box-sizing: border-box;
     min-height: 100vh;
     margin: 0;
+    align-self: flex-start;
 }
 
 #explore-page img {
@@ -157,7 +158,7 @@ p1{
     max-width: 500px;
     height: auto;
     display: block;
-    padding-top:100px;
+    padding-top: 0px;
 }
 
 #explore-page h1 {
