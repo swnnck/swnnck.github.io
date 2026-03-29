@@ -163,8 +163,8 @@ p1{
 
 #explore-page h1 {
     margin-top: 0; 
-}
-
-#explore-page h1 {
-    margin-top: 0;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 18px;
+    color: #0b032d;
+    text-align: center;
 }
