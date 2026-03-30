@@ -6,6 +6,9 @@ Privacy Persona by Sam Winnick - Undergraduate Capstone Research Project, Univer
 Designed for educating on web privacy habits
 
 All drawings and designs original by me!
+Graphics : Inkscape
+Persona Results : Affinity
+Code : Visual Studio
 
 Project started : September 2025
 Code Repo started : 26 February 2026
