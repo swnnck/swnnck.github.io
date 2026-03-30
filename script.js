@@ -171,12 +171,12 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     document.getElementById("explore-button").addEventListener("click", function() {
-        document.getElementById("start-page").style.display = "none";
+        document.getElementById("start-page").style.display = "none"; //hide start page and show explore page when user clicks button
         document.getElementById("explore-page").style.display = "block";
     });
 
     document.getElementById("explore-button2").addEventListener("click", function() {
-        document.getElementById("start-page").style.display = "none";
+        document.getElementById("result").style.display = "none"; //hide result page and show explore page when user clicks button
         document.getElementById("explore-page").style.display = "block";
     });
 });
