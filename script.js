@@ -175,6 +175,10 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("explore-page").style.display = "block";
     });
 
+    document.getElementById("explore-button2").addEventListener("click", function() {
+        document.getElementById("start-page").style.display = "none";
+        document.getElementById("explore-page").style.display = "block";
+    });
 });
 
 function displayQuestions() {
@@ -203,10 +207,10 @@ function showResult() {
 
     // this function shows the results page and hides the other child pages
     const resultImage = document.getElementById("result-image");
-    resultImage.src = results[personaResult].image;
-    resultImage.alt = results[personaResult].title;
-    document.getElementById("quiz").style.display = "none";
-    document.getElementById("result").style.display = "block";
+        resultImage.src = results[personaResult].image;
+        resultImage.alt = results[personaResult].title;
+        document.getElementById("quiz").style.display = "none";
+        document.getElementById("result").style.display = "block";
 
 }
 
