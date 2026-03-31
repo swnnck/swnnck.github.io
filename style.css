@@ -8,8 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 1000vh;
-    
+    min-height: 100vh;
 }
 
 .quiz-page {
