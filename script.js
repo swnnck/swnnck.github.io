@@ -113,7 +113,7 @@ const questions = [
 
             {
         image: "",
-        question: "You bag is getting pretty heavy! It seems like it might be time to turn back. You...",
+        question: "Your bag is getting pretty heavy! It seems like it might be time to turn back. You...",
         answers: [
              {text: "Leave the torches on the walls lit so you can remember your way next time.", type: "P"},
              {text: "Extinguish the torches so people cant follow you back out.", type: "Pr"}
