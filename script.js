@@ -50,7 +50,7 @@ const questions = [
 
             {
         image: "",
-        question: "You notice your compass has gone missing. Possibly fallen out or taken from your pocket? You are concerned about losing your small sword. You…",
+        question: "You notice your compass has gone missing. Possibly fallen out or taken from your pocket? You are concerned about also losing your small sword. You…",
         answers: [
              {text: "Remove it from my backpack and place it in my belt. I want to be able to access it quickly.", type: "U"},
              {text: "Sheath my sword and secure it with rope to my back. I want it to stay close to my body.", type: "S"}
