@@ -91,6 +91,11 @@ h2{
     max-height: 300px; 
 }
 
+.home-image {
+    max-width: 100%; 
+    max-height: 100px; 
+}
+
 .answer-button {
     font-family: "Lucida Console", "Courier New", monospace;
     background-color: #4e3f27;
@@ -158,6 +163,7 @@ h2{
     height: auto;
     display: block;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #explore-page h1 {

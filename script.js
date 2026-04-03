@@ -179,6 +179,11 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("result").style.display = "none"; //hide result page and show explore page when user clicks button
         document.getElementById("explore-page").style.display = "block";
     });
+
+    document.getElementById("home-link").addEventListener("click", function() {
+        document.getElementById("explore-page").style.display = "none"; //hide explore page and show start page when user clicks button
+        document.getElementById("start-page").style.display = "block";
+});
 });
 
 function displayQuestions() {
