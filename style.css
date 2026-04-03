@@ -91,11 +91,6 @@ h2{
     max-height: 300px; 
 }
 
-.home-image {
-    max-width: 100%; 
-    max-height: 100px; 
-}
-
 .answer-button {
     font-family: "Lucida Console", "Courier New", monospace;
     background-color: #4e3f27;
@@ -172,4 +167,10 @@ h2{
     font-size: 18px;
     color: #0b032d;
     text-align: center;
+}
+
+.home-image {
+    max-width: 100%; 
+    max-height: 100px; 
+    cursor: pointer;
 }
