@@ -195,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("about-page").style.display = "block";
     });
 
-    document.getElementById("home-link").addEventListener("click", function() {
+    document.getElementById("home-link2").addEventListener("click", function() {
         document.getElementById("about-page").style.display = "none"; //hide about page and show start page when user clicks button
         document.getElementById("start-page").style.display = "block";
 });

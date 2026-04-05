@@ -135,7 +135,7 @@ h2{
 }
  
 .result-image img {
-    max-width: 500px;
+    max-width: 100%;
     width: 100%;
     height: auto;
     margin: auto;
@@ -188,7 +188,7 @@ h2{
 
 #about-block {
     max-width: 440px;
-    background-color: #a0b18f;
+    background-color: #5d7a5d8e;
     display: inline-block;
     padding: 16px 24px;
 }
