@@ -183,7 +183,23 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("home-link").addEventListener("click", function() {
         document.getElementById("explore-page").style.display = "none"; //hide explore page and show start page when user clicks button
         document.getElementById("start-page").style.display = "block";
+    });
+
+    document.getElementById("about-button").addEventListener("click", function() {
+        document.getElementById("start-page").style.display = "none"; //hide start page and show about page when user clicks button
+        document.getElementById("about-page").style.display = "block";
+    });
+
+    document.getElementById("about-button2").addEventListener("click", function() {
+        document.getElementById("result").style.display = "none"; //hide result page and show about page when user clicks button
+        document.getElementById("about-page").style.display = "block";
+    });
+
+    document.getElementById("home-link").addEventListener("click", function() {
+        document.getElementById("about-page").style.display = "none"; //hide about page and show start page when user clicks button
+        document.getElementById("start-page").style.display = "block";
 });
+
 });
 
 function displayQuestions() {
