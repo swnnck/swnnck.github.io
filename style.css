@@ -64,6 +64,7 @@ h2{
     font-size: 16px;
     margin-top: 20px;
     border-radius: 0px;
+    font-weight: bold
 }
 
 
@@ -84,6 +85,7 @@ h2{
     font-size: 14px;
     margin-top: 20px;
     border-radius: 0px;
+    font-weight: bold
 }
 
 .about-button:hover {
