@@ -1,13 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Lucida Console", "Courier New", monospace;
     background: url("images/background.svg") center/cover no-repeat #5D7A5D;
     background-repeat: repeat-y;
     font-size: 20px;
     margin: 0;
-    padding: 0;
+    padding: 16px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     min-height: 100vh;
 }
 
@@ -15,8 +19,9 @@ body {
     font-family: "Lucida Console", "Courier New", monospace;
     text-align: center;
     font-size: 23px;
-    max-width: 450px;
+    max-width: 500px;
     width: 100%;
+    min-height: 100svh;
     font-weight: bold;
 }
 
