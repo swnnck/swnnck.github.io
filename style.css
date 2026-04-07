@@ -4,8 +4,7 @@
 
 body {
     font-family: "Lucida Console", "Courier New", monospace;
-    background: url("images/background.svg") center/cover no-repeat #5D7A5D;
-    background-repeat: repeat-y;
+    background: url("images/background.svg") center top / 100% auto repeat-y #5D7A5D;
     font-size: 20px;
     margin: 0;
     padding: 16px;
