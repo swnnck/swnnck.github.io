@@ -162,10 +162,10 @@ function getPersonaFromScore(score) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("start-button").addEventListener("click", function() {
+    document.getElementById("start-button").addEventListener("click", function() { 
         currentQuestion = 0;
         totalPoints = 0;
-        document.getElementById("start-page").style.display = "none";
+        document.getElementById("start-page").style.display = "none"; // hide start page and show quiz page when user clicks button
         document.getElementById("quiz").style.display = "block";
         displayQuestions(); 
     });
@@ -202,24 +202,27 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
+// this function allocates answer button text and click function for the answer buttons
 function displayQuestions() {
     const display = questions[currentQuestion];
-    document.getElementById("question-text").textContent = display.question;
+    document.getElementById("question-text").textContent = display.question; 
     document.getElementById('answerA').textContent = display.answers[0].text;
-    document.getElementById('answerB').textContent = display.answers[1].text;
+    document.getElementById('answerB').textContent = display.answers[1].text;  
 
     document.getElementById('answerA').onclick = () => selectAnswer(display.answers[0].type);
-    document.getElementById('answerB').onclick = () => selectAnswer(display.answers[1].type);
+    document.getElementById('answerB').onclick = () => selectAnswer(display.answers[1].type); 
   }
 
+  // this function accumulates points for the chosen answer type
   function selectAnswer(type) {
     totalPoints += pointValues[type];
-    currentQuestion++;
+    currentQuestion++; 
 
-    if (currentQuestion < questions.length) {
+    // this function shows next question or final result
+    if (currentQuestion < questions.length) { 
       displayQuestions();
     } else {
-      showResult();
+      showResult(); 
     }
   }
 
