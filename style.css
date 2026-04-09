@@ -204,6 +204,7 @@ h2{
     background-color: #5d7a5d8e;
     display: inline-block;
     padding: 16px 24px;
+    overflow-wrap: break-word;
 }
 
 #about-page h1 {
