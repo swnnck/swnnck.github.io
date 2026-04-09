@@ -121,6 +121,14 @@ h2{
     color: #4e3f27;
 }
 
+@media (hover: none) {
+    .answer-button:focus {
+        outline: none;
+        background-color: #4e3f27;
+        color: #ffffff;
+    }
+}
+
 #question-text {
     font-family: "Lucida Console", "Courier New", monospace;
     font-size: 22px;
