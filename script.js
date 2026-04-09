@@ -218,6 +218,8 @@ function displayQuestions() {
     totalPoints += pointValues[type];
     currentQuestion++; 
 
+    document.activeElement.blur();
+    
     // this function shows next question or final result
     if (currentQuestion < questions.length) { 
       displayQuestions();
