@@ -202,7 +202,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
-// this function allocates answer button text and click function for the answer buttons
+// this function allocates answer button text and click function for the answer
 function displayQuestions() {
     const display = questions[currentQuestion];
     document.getElementById("question-text").textContent = display.question; 
@@ -215,11 +215,10 @@ function displayQuestions() {
 
   // this function accumulates points for the chosen answer type
   function selectAnswer(type) {
+    document.activeElement.blur();  // to fix button hover on mobile
     totalPoints += pointValues[type];
     currentQuestion++; 
 
-    document.activeElement.blur();
-    
     // this function shows next question or final result
     if (currentQuestion < questions.length) { 
       displayQuestions();
